@@ -16,5 +16,5 @@ var Proposal = /** @class */ (function () {
 }());
 exports.Proposal = Proposal;
 // 'xyz company', 'http://portfolio.alonsohernandez.com', 'ruby on rails',
-//150, 120, 15, 'alonsohernandez.com'
+// 150, 120, 15, 'alonsohernandez.com'
 //# sourceMappingURL=proposal.js.map
