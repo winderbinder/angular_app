@@ -1,5 +1,23 @@
-<div>Create a proposal</div>
+<h1>Create a proposal</h1>
 
 <div>
-  {{proposal.portfolio_url}}
+  <form #proposalForm='ngForm'>
+    <div class="form-group">
+      <label for="customer">Customer Name</label>
+      <input type="text"
+             id="customer"
+             placeholder="ABC company"
+             required
+             name="customer"
+             #customer='ngModel'
+             [(ngModel)]="proposal.customer"
+      >       
+    </div>
+  </form>
 </div>
+
+<div>
+  {{ proposal.customer }}
+</div>
+
+<!-- [()] this syntax is to set something else on the page like an api -->
