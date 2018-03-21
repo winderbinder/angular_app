@@ -16,21 +16,21 @@ var DocumentsComponent = /** @class */ (function () {
                 description: "Download FREE RAM!!",
                 file_url: "yo.com",
                 updated_at: "suh dude updated",
-                image_url: "dope.com",
+                image_url: "https://support.apple.com/mac",
             },
             {
                 title: "my second doc",
                 description: "Download FREE RAM!!",
                 file_url: "yo.com",
                 updated_at: "suh dude updated",
-                image_url: "dope.com",
+                image_url: "https://support.apple.com/mac",
             },
             {
                 title: "my third doc",
                 description: "Download FREE RAM!!",
                 file_url: "yo.com",
                 updated_at: "suh dude updated",
-                image_url: "dope.com",
+                image_url: "https://support.apple.com/mac",
             },
         ];
     }
