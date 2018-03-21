@@ -4,7 +4,8 @@ import { Document } from './document';
 @Component({
   moduleId: module.id,
   selector: 'documents',
-  templateUrl: 'documents.component.html'
+  templateUrl: 'documents.component.html',
+  styleUrls: ['documents.component.css']
 })
 
 export class DocumentsComponent {
@@ -15,21 +16,21 @@ export class DocumentsComponent {
       description: "Download FREE RAM!!",
       file_url: "yo.com",
       updated_at: "suh dude updated",
-      image_url: "https://support.apple.com/mac",
+      image_url: "computer.jpg",
     },
     {
       title: "my second doc",
       description: "Download FREE RAM!!",
       file_url: "yo.com",
       updated_at: "suh dude updated",
-      image_url: "https://support.apple.com/mac",
+      image_url: "computer.jpg",
     },
     {
       title: "my third doc",
       description: "Download FREE RAM!!",
       file_url: "yo.com",
       updated_at: "suh dude updated",
-      image_url: "https://support.apple.com/mac",
+      image_url: "computer.jpg",
     },
   ]
 }
