@@ -1,36 +1,36 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Document } from './document';
+import { Observable } from 'rxjs/Rx';
+import { DocumentService } from './document.service';
 
 @Component({
   moduleId: module.id,
   selector: 'documents',
   templateUrl: 'documents.component.html',
-  styleUrls: ['documents.component.css']
+  styleUrls: ['documents.component.css'],
+  providers: [ DocumentService ]
 })
 
-export class DocumentsComponent {
+export class DocumentsComponent implements OnInit {
   pageTitle: string = "Document Dashboard"
-  documents: Document[] = [
-    {
-      title: "my first doc",
-      description: "Download FREE RAM!!",
-      file_url: "yo.com",
-      updated_at: "suh dude updated",
-      image_url: "http://www.bigfoto.com/stones-background.jpg",
-    },
-    {
-      title: "my second doc",
-      description: "Download FREE RAM!!",
-      file_url: "yo.com",
-      updated_at: "suh dude updated",
-      image_url: "http://www.bigfoto.com/stones-background.jpg",
-    },
-    {
-      title: "my third doc",
-      description: "Download FREE RAM!!",
-      file_url: "yo.com",
-      updated_at: "suh dude updated",
-      image_url: "http://www.bigfoto.com/stones-background.jpg",
-    },
-  ]
+  documents: Document[];
+  errorMessage: string;
+  mode = "Observable";
+
+  constructor(
+    private documentService: DocumentService
+  ) {}
+
+  ngOnInit() {
+    let timer = Observable.timer(0, 5000)
+    timer.subscribe(() => this.getDocuments());
+  }
+
+  getDocuments() {
+    this.documentService.getDocuments()
+        .subscribe(
+          documents => this.documents = documents,
+          error => this.errorMessage = <any>error
+        )
+  }
 }
