@@ -14,12 +14,13 @@ import { ProposalShowComponent } from './proposal/proposal-show.component';
 
 import { AppRoutingModule } from './app-routing.module';
 
-@NgModule ({
+@NgModule({
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    NgbModule.forRoot()
+    NgbModule.forRoot(),
+    HttpModule
   ],
   declarations: [
     AppComponent,
