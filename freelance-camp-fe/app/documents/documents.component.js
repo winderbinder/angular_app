@@ -16,21 +16,21 @@ var DocumentsComponent = /** @class */ (function () {
                 description: "Download FREE RAM!!",
                 file_url: "yo.com",
                 updated_at: "suh dude updated",
-                image_url: "computer.jpg",
+                image_url: "http://www.bigfoto.com/stones-background.jpg",
             },
             {
                 title: "my second doc",
                 description: "Download FREE RAM!!",
                 file_url: "yo.com",
                 updated_at: "suh dude updated",
-                image_url: "computer.jpg",
+                image_url: "http://www.bigfoto.com/stones-background.jpg",
             },
             {
                 title: "my third doc",
                 description: "Download FREE RAM!!",
                 file_url: "yo.com",
                 updated_at: "suh dude updated",
-                image_url: "computer.jpg",
+                image_url: "http://www.bigfoto.com/stones-background.jpg",
             },
         ];
     }
